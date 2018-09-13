@@ -76,5 +76,5 @@
 	#为城市信息表添加主键
 	alter table lagou_city add primary key (id) ;
 
-	#为company添加外键约束
+	#为city添加外键约束
 	alter table lagou_position add constraint FK_lagou_city_id foreign key(city) REFERENCES company(id);
